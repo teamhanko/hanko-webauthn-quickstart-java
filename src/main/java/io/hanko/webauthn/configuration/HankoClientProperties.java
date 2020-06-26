@@ -1,4 +1,4 @@
-package io.hanko.webauthn;
+package io.hanko.webauthn.configuration;
 
 import lombok.Getter;
 import lombok.Setter;

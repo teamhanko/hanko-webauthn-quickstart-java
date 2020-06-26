@@ -5,7 +5,7 @@ import io.hanko.sdk.HankoClient;
 import io.hanko.sdk.models.CreateWebAuthnRequest;
 import io.hanko.sdk.models.HankoRequest;
 import io.hanko.sdk.models.Operation;
-import io.hanko.webauthn.UserProperties;
+import io.hanko.webauthn.configuration.UserProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

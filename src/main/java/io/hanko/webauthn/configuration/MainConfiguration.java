@@ -3,7 +3,6 @@ package io.hanko.webauthn.configuration;
 import io.hanko.sdk.HankoClient;
 import io.hanko.sdk.HankoClientConfig;
 import io.hanko.sdk.util.HankoUtils;
-import io.hanko.webauthn.HankoClientProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

@@ -1,6 +1,6 @@
 package io.hanko.webauthn.controller;
 
-import io.hanko.webauthn.UserProperties;
+import io.hanko.webauthn.configuration.UserProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
