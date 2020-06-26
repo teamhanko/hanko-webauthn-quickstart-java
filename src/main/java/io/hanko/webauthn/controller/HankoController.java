@@ -1,13 +1,13 @@
 package io.hanko.webauthn.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import io.hanko.sdk.HankoClient;
 import io.hanko.sdk.models.CreateWebAuthnRequest;
 import io.hanko.sdk.models.HankoRequest;
 import io.hanko.sdk.models.Operation;
 import io.hanko.webauthn.UserProperties;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -37,5 +37,13 @@ public class HankoController {
         request.setOperation(operation);
         request.setUserId(user.getUserId());
         return hankoClient.requestWebAuthnOperation(request);
+    }
+
+    @PostMapping("/finalization")
+    public HankoRequest finalizeRegistration(
+            @RequestParam String requestId,
+            @RequestBody String webAuthnResponse) throws JsonProcessingException {
+
+        return hankoClient.validateWebAuthnRequest(requestId, webAuthnResponse);
     }
 }
