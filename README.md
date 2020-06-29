@@ -1,7 +1,3 @@
-<a href="https://hanko.io/">
-    <img src="src/main/resources/static/images/hanko-logo.png" alt="Hanko logo" title="Hanko" align="right" height="100" />
-</a>
-
 # Hanko WebAuthn Quickstart Application
 
 Sample application to demonstrate registration, authentication and de-registration of 
