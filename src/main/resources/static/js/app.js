@@ -65,7 +65,7 @@
         // Send the signed request to the example API and forward it to the Hanko API.
         _finalizeRequest: credentialRequest => {
             const endpoint = win.app.endpoints.finalization + "?requestId=" + win.app.hankoApiResponse.id,
-                body = JSON.stringify({ webAuthnResponse: credentialRequest});
+                body = JSON.stringify(credentialRequest);
 
             win.app._emptyTextElements();
             fetch(endpoint, {method: "POST", headers: win.app.requestHeader, body: body})
