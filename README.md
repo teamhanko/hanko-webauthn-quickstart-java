@@ -18,6 +18,18 @@ These instructions will get you the quickstart application up and running on you
 ### Prerequisites
 
 - JDK 1.8+
+- an API Key ID/API Key pair in order to make authorized calls to the Hanko API. To get an API Key ID/API Key pair:
+    1. Go to the [Hanko Console](https://console.hanko.io)
+    2. Log in or register an account
+    3. Once signed in, create an organization. If you already created an organization, select the organization.
+    4. Add a new relying party with the following properties:
+        - Relying Party Name: choose any name you want
+        - APP ID: **must** be `http://localhost` when using the sample application from a local environment. 
+    5. Click "Add new Relying Party". Select the created relying party to get to the relying party dashboard.
+    6. On the relying party dashboard, select "General Settings" and then click "Add" in the "API Keys" panel.
+    This will generate an API Key and an API Key ID.  You should store the secret securely since it cannot be obtained once 
+    you confirm and close the modal displayed after key generation. You will need the API Key ID/API Key pair to 
+    configure the sample application (see [Configure Hanko Api Keys](#configure-hanko-api-keys)).
 
 ### Usage
 

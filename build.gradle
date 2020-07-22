@@ -22,6 +22,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.hibernate:hibernate-validator:6.1.5.Final'
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
     implementation 'io.hanko:java-sdk:1.0.0'
     compileOnly 'org.projectlombok:lombok'
